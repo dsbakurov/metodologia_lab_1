@@ -17,7 +17,7 @@ class Progression:
         for i in range(self.n_cycles):
             progression_len = random.randint(5, 15)
             b = random.randint(1, 5)
-            q = random.randint(1, 5)
+            q = random.randint(2, 5)
             numbers = [b * q ** i for i in range(progression_len)]
 
             hidden_number = random.choice(numbers)
@@ -34,9 +34,9 @@ class Progression:
                 is_all_correct = False
                 print(f"'{user_answer}' is wrong answer ;(. "
                       f"Correct answer was '{hidden_number}'.")
-                print("Let's try again, Sam!")
+                print(f"Let's try again, {self.name}!")
         if is_all_correct:
-            print("Congratulations, Sam!")
+            print(f"Congratulations, {self.name}!")
 
     def start(self):
         self.welcome()
