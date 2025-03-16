@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length = 88
+lint.select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+]
+target-version = "py310"
