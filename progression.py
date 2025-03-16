@@ -2,7 +2,7 @@ import random
 
 
 class Progression:
-    def __init__(self, n_cycles=5):
+    def __init__(self, n_cycles=3):
         self.name = ""
         self.n_cycles = n_cycles
 
