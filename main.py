@@ -1,7 +1,7 @@
 import sys
 
-from nok import NOK
-from progression import Progression
+from games.nok import NOK
+from games.progression import Progression
 
 games = {
     "nok": NOK,
